@@ -6,10 +6,96 @@ $dark_cyan: hsl(184, 100%, 22%);
 $very_dark_cyan: hsl(179, 100%, 13%);
 $transparent_white: hsla(0, 0%, 100%, 0.75);
 $very_light_gray: hsl(0, 0%, 95%);
-$default_font_size: 15px;
+$default_font_size: 1.2vw;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    .section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 70vh;
+        display: flex;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        font-family: 'Lexend Deca', sans-serif;
+
+        h1 {
+            font-family: 'Big Shoulders Display', sans-serif;
+            text-transform: uppercase;
+            color: $very_light_gray;
+            font-size: 2.8vw;
+        }
+
+        p {
+            color: $transparent_white;
+            margin-bottom: 5vh;
+            line-height: 4.2vh;
+        }
+
+        a {
+            background-color: white;
+            text-decoration: none;
+            height: 7vh;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.5em;
+        }
+
+        .car-description:nth-child(1) {
+            background-color: hsl(31, 77%, 52%);
+
+            a {
+                color: hsl(31, 77%, 52%);
+            }
+        }
+
+        .car-description:nth-child(2) {
+            background-color: hsl(184, 100%, 22%);
+            
+            a {
+                color: hsl(184, 100%, 22%);
+            }
+        }
+
+        .car-description:nth-child(3) {
+            background-color: hsl(179, 100%, 13%);    
+
+            a {
+                color: hsl(179, 100%, 13%);
+            }
+        }
+
+        .car-description {
+            font-size: $default_font_size;
+            padding: 6.8vh 3.3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                width: 30%;
+            }
+
+            a:hover {
+                background-color: rgba(255, 255, 255, 0);
+                color: $very_light_gray;
+                border: 0.15em solid $very_light_gray;
+            }
+        }
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 12px;
+        width: 100%;
+        text-align: center;
+    }
 }

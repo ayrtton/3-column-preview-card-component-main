@@ -4,4 +4,76 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+* .section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-family: "Lexend Deca", sans-serif;
+}
+* .section h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: 2.8vw;
+}
+* .section p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 5vh;
+  line-height: 4.2vh;
+}
+* .section a {
+  background-color: white;
+  text-decoration: none;
+  height: 7vh;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5em;
+}
+* .section .car-description:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+* .section .car-description:nth-child(1) a {
+  color: hsl(31, 77%, 52%);
+}
+* .section .car-description:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+* .section .car-description:nth-child(2) a {
+  color: hsl(184, 100%, 22%);
+}
+* .section .car-description:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+* .section .car-description:nth-child(3) a {
+  color: hsl(179, 100%, 13%);
+}
+* .section .car-description {
+  font-size: 1.2vw;
+  padding: 6.8vh 3.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+* .section .car-description img {
+  width: 30%;
+}
+* .section .car-description a:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: hsl(0, 0%, 95%);
+  border: 0.15em solid hsl(0, 0%, 95%);
+}
+* .attribution {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
