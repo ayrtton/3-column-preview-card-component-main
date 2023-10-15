@@ -6,12 +6,17 @@ $dark_cyan: hsl(184, 100%, 22%);
 $very_dark_cyan: hsl(179, 100%, 13%);
 $transparent_white: hsla(0, 0%, 100%, 0.75);
 $very_light_gray: hsl(0, 0%, 95%);
-$default_font_size: 1.2vw;
+$dark_blue: hsl(250, 100%, 25%);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    body {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1.2vw;
+    }
 
     .section {
         position: absolute;
@@ -23,7 +28,6 @@ $default_font_size: 1.2vw;
         display: flex;
         border-radius: 0.75rem;
         overflow: hidden;
-        font-family: 'Lexend Deca', sans-serif;
 
         h1 {
             font-family: 'Big Shoulders Display', sans-serif;
@@ -47,6 +51,7 @@ $default_font_size: 1.2vw;
             align-items: center;
             justify-content: center;
             border-radius: 1.5em;
+            transition: 0.7s;
         }
 
         .car-description:nth-child(1) {
@@ -74,7 +79,6 @@ $default_font_size: 1.2vw;
         }
 
         .car-description {
-            font-size: $default_font_size;
             padding: 6.8vh 3.3vw;
             display: flex;
             flex-direction: column;
@@ -94,8 +98,56 @@ $default_font_size: 1.2vw;
 
     .attribution {
         position: absolute;
-        bottom: 12px;
+        bottom: 2vh;
         width: 100%;
         text-align: center;
+        color: $dark_blue;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+        body {
+            font-size: 3.7vw;
+        }
+
+        .section {
+            flex-direction: column;
+            width: 85%;
+            height: auto;
+            position: static;
+            transform: none;
+            margin: 25% auto;
+
+            h1 {
+                font-size: 9.7vw;
+            }
+
+            p {
+                line-height: 3.7vh;
+                margin-bottom: 3vh;
+            }
+
+            a {
+                width: 60%;
+            }
+
+            .car-description {
+                padding: 6.8vh 12vw;
+                height: 70vh;
+
+                img {
+                    width: 25%;
+                }
+            }
+        }
+
+        .attribution {
+            position: relative;
+            width: 70%;
+            margin: 0 auto 2vh;
+        }
     }
 }

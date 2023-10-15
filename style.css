@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+* body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2vw;
+}
 * .section {
   position: absolute;
   top: 50%;
@@ -15,7 +19,6 @@
   display: flex;
   border-radius: 0.75rem;
   overflow: hidden;
-  font-family: "Lexend Deca", sans-serif;
 }
 * .section h1 {
   font-family: "Big Shoulders Display", sans-serif;
@@ -37,6 +40,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 1.5em;
+  transition: 0.7s;
 }
 * .section .car-description:nth-child(1) {
   background-color: hsl(31, 77%, 52%);
@@ -57,7 +61,6 @@
   color: hsl(179, 100%, 13%);
 }
 * .section .car-description {
-  font-size: 1.2vw;
   padding: 6.8vh 3.3vw;
   display: flex;
   flex-direction: column;
@@ -73,7 +76,46 @@
 }
 * .attribution {
   position: absolute;
-  bottom: 12px;
+  bottom: 2vh;
   width: 100%;
   text-align: center;
+  color: hsl(250, 100%, 25%);
+}
+* .attribution a {
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  * body {
+    font-size: 3.7vw;
+  }
+  * .section {
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+    position: static;
+    transform: none;
+    margin: 25% auto;
+  }
+  * .section h1 {
+    font-size: 9.7vw;
+  }
+  * .section p {
+    line-height: 3.7vh;
+    margin-bottom: 3vh;
+  }
+  * .section a {
+    width: 60%;
+  }
+  * .section .car-description {
+    padding: 6.8vh 12vw;
+    height: 70vh;
+  }
+  * .section .car-description img {
+    width: 25%;
+  }
+  * .attribution {
+    position: relative;
+    width: 70%;
+    margin: 0 auto 2vh;
+  }
 }/*# sourceMappingURL=style.css.map */
