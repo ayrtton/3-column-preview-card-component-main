@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 * body {
@@ -15,12 +14,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   border-radius: 0.75rem;
   overflow: hidden;
 }
-* .section h1 {
+* .section h2 {
   font-family: "Big Shoulders Display", sans-serif;
   text-transform: uppercase;
   color: hsl(0, 0%, 95%);
@@ -34,7 +33,7 @@
 * .section a {
   background-color: white;
   text-decoration: none;
-  height: 7vh;
+  min-height: 7vh;
   width: 70%;
   display: flex;
   align-items: center;
@@ -91,12 +90,11 @@
   * .section {
     flex-direction: column;
     width: 85%;
-    height: auto;
     position: static;
     transform: none;
     margin: 25% auto;
   }
-  * .section h1 {
+  * .section h2 {
     font-size: 9.7vw;
   }
   * .section p {
@@ -108,7 +106,7 @@
   }
   * .section .car-description {
     padding: 6.8vh 12vw;
-    height: 70vh;
+    min-height: 70vh;
   }
   * .section .car-description img {
     width: 25%;

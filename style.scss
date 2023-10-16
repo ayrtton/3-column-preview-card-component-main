@@ -10,7 +10,6 @@ $dark_blue: hsl(250, 100%, 25%);
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 
     body {
@@ -24,12 +23,12 @@ $dark_blue: hsl(250, 100%, 25%);
         left: 50%;
         transform: translate(-50%, -50%);
         width: 70%;
-        height: 70vh;
+        min-height: 70vh;
         display: flex;
         border-radius: 0.75rem;
         overflow: hidden;
 
-        h1 {
+        h2 {
             font-family: 'Big Shoulders Display', sans-serif;
             text-transform: uppercase;
             color: $very_light_gray;
@@ -45,7 +44,7 @@ $dark_blue: hsl(250, 100%, 25%);
         a {
             background-color: white;
             text-decoration: none;
-            height: 7vh;
+            min-height: 7vh;
             width: 70%;
             display: flex;
             align-items: center;
@@ -116,12 +115,11 @@ $dark_blue: hsl(250, 100%, 25%);
         .section {
             flex-direction: column;
             width: 85%;
-            height: auto;
             position: static;
             transform: none;
             margin: 25% auto;
 
-            h1 {
+            h2 {
                 font-size: 9.7vw;
             }
 
@@ -136,7 +134,7 @@ $dark_blue: hsl(250, 100%, 25%);
 
             .car-description {
                 padding: 6.8vh 12vw;
-                height: 70vh;
+                min-height: 70vh;
 
                 img {
                     width: 25%;
